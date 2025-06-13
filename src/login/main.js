@@ -1,5 +1,4 @@
-console.log('nested');
-import { supabase } from '../login/api-client.js';
+import { supabase } from '../api-client.js';
 
 const form = document.getElementById('login-form');
 const loginMessage = document.getElementById('login-message');
@@ -20,7 +19,7 @@ form.addEventListener('submit', async (event) => {
     loginMessage.classList.add('text-red-500');
   } else {
     loginMessage.classList.remove('text-red-500');
-    loginMessage.textContent = 'Pending...'
+    loginMessage.textContent = 'Redirecting...'
     setTimeout(() => {
       window.location.href = '../index.html';
     }, 1000);

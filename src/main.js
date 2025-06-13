@@ -1,3 +1,22 @@
+import { supabase } from './api-client.js';
+
+const logoutButton = document.getElementById('logout-button');
+const loginRedirect = document.getElementById('login-redirect');
+
+supabase.auth.onAuthStateChange((_event, session) => {
+  handleSession(session);
+});
+
+function handleSession(session) {
+  if (session) {
+    logoutButton.classList.remove('hidden');
+    loginRedirect.classList.add('hidden');
+  } else {
+    logoutButton.classList.add('hidden');
+    loginRedirect.classList.remove('hidden');
+  }
+}
+
 async function init() {
   const { data: { session } } = await supabase.auth.getSession();
   handleSession(session);
