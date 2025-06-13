@@ -3,21 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="https://pngtree.com/freepng/donut-cartoon_4707760.html" type="image/png">
     <title>Article website</title>
     <link rel="stylesheet" href="/style.css">
   </head>
-  <body class="overflow-x-hidden flex flex-col min-h-screen bg-pageBG">
+  <body class="overflow-x-hidden flex flex-col min-h-screen bg-pagebackgrnd">
 
     <header class="container flex items-center justify-between mx-auto p-4 md:px-8 mx-auto">
       <h1 class="font-italic text-3xl text-hovering flex flex-row items-center">
         Article website
       </h1>
       <nav class="flex space-x-2">
-        <a href="login/" id="login-redirect" class="transition-transform duration-250 hover:scale-100 hidden bg-first hover:bg-hovering text-almostwhite py-2 px-4 rounded cursor-pointer text-center w-full md:w-auto ml-2.5">
+        <a href="login/" id="login-redirect" class="transition-transform duration-250 hover:scale-100 hidden bg-first hover:bg-hovering text-barbie py-2 px-4 rounded cursor-pointer text-center w-full md:w-auto ml-2.5">
           Log In
         </a>
-        <button id="logout-button" class="transition-transform duration-250 hover:scale-100 hidden bg-first hover:bg-hovering text-almostwhite py-2 px-4 rounded cursor-pointer text-center w-full md:w-auto ml-2.5">
+        <button id="logout-button" class="transition-transform duration-250 hover:scale-100 hidden bg-first hover:bg-hovering text-barbie py-2 px-4 rounded cursor-pointer text-center w-full md:w-auto ml-2.5">
           Log Out
         </button>
       </nav>
@@ -27,14 +26,14 @@
       <section class="articles flex flex-col mb-5"></section>
 
       <div class="m-4">
-        <button id="add-article-button" class="transition-transform duration-250 hover:scale-100 w-full bg-first hover:bg-hovering text-almostwhite font-semibold px-4 py-2 rounded cursor-pointer text-sm md:text-base">
+        <button id="add-article-button" class="transition-transform duration-250 hover:scale-100 w-full bg-first hover:bg-hovering text-barbie font-semibold px-4 py-2 rounded cursor-pointer text-sm md:text-base">
           Add your article
         </button>
       </div>
     
       <dialog id="edit-modal" class="backdrop:bg-white/30 backdrop:backdrop-blur-sm">
         <div class="fixed inset-0 flex items-center justify-center p-4">
-          <form id="edit-form" method="dialog" class="bg-almostwhite p-6 rounded w-full max-w-md space-y-4">
+          <form id="edit-form" method="dialog" class="bg-barbie p-6 rounded w-full max-w-md space-y-4">
             <h2 class="text-xl font-semibold">Edit article</h2>
               
             <input type="hidden" id="edit-id" name="edit-id" />
@@ -60,10 +59,10 @@
             </div>
 
             <div class="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2">
-              <button type="button" id="cancel-edit" class="transition-transform duration-250 hover:scale-100 px-6 py-2 bg-secondary hover:bg-hoveringS rounded cursor-pointer text-almostwhite">
+              <button type="button" id="cancel-edit" class="transition-transform duration-250 hover:scale-100 px-6 py-2 bg-secondary hover:bg-pink rounded cursor-pointer text-barbie">
                 Cancel
               </button>
-              <button type="submit" class="transition-transform duration-300 hover:scale-102 px-6 py-2 bg-first hover:bg-hovering rounded cursor-pointer text-almostwhite">
+              <button type="submit" class="transition-transform duration-300 hover:scale-102 px-6 py-2 bg-first hover:bg-hovering rounded cursor-pointer text-barbie">
                 Save
               </button>
             </div>
@@ -72,7 +71,7 @@
 
       <dialog id="add-modal" class="backdrop:bg-white/30 backdrop:backdrop-blur-sm">
         <div class="fixed inset-0 flex items-center justify-center p-4">
-          <form id="add-form" method="dialog" class="bg-almostwhite p-6 rounded w-full max-w-md space-y-4">
+          <form id="add-form" method="dialog" class="bg-barbie p-6 rounded w-full max-w-md space-y-4">
             <h2 class="text-xl font-semibold">New article</h2>
 
             <div>
@@ -96,10 +95,10 @@
             </div>
 
             <div class="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2">
-              <button type="button" id="cancel-add" class="transition-transform duration-250 hover:scale-100 px-4 py-2 bg-secondary hover:bg-hoveringS rounded cursor-pointer text-almostwhite">
+              <button type="button" id="cancel-add" class="transition-transform duration-250 hover:scale-100 px-4 py-2 bg-secondary hover:bg-pink rounded cursor-pointer text-barbie">
                 Cancel
               </button>
-              <button type="submit" class="transition-transform duration-250 hover:scale-100 px-4 py-2 bg-first hover:bg-hovering rounded cursor-pointer text-almostwhite">
+              <button type="submit" class="transition-transform duration-250 hover:scale-100 px-4 py-2 bg-first hover:bg-hovering rounded cursor-pointer text-barbie">
                 Add
               </button>
             </div>
@@ -107,7 +106,7 @@
       </dialog>
     </main>
 
-    <footer class="bg-almostwhite text-gray-700 text-center py-4 text-sm italic mt-6">
+    <footer class="bg-barbie text-gray-700 text-center py-4 text-sm italic mt-6">
       Built with ❤ by me
     </footer>
 

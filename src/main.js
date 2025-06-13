@@ -51,7 +51,7 @@ async function main() {
   
 
 const articlesList = articles.map((article) => `
-  <article class="article py-6 border-b-10 border-pageBG bg-secondary/50 rounded p-6 grid grid-cols-[auto_1fr] grid-rows-[auto_auto] gap-x-3 gap-y-2" data-id="${article.id}">
+  <article class="article py-6 border-b-10 border-pagebackgrnd bg-secondary/50 rounded p-6 grid grid-cols-[auto_1fr] grid-rows-[auto_auto] gap-x-3 gap-y-2" data-id="${article.id}">
     
     <div class="col-start-2 row-start-1">
       <h2 class="text-xl font-semibold">${article.title}</h2>
@@ -63,8 +63,8 @@ const articlesList = articles.map((article) => `
       </div>
     </div>
     <div class="col-start-2 row-start-2 flex space-x-2">
-      ${session ? `<button class="transition-transform duration-300 hover:scale-102 edit-button bg-first hover:bg-hovering px-3 py-1 rounded text-almostwhite cursor-pointer">Edit</button>
-      <button class="transition-transform duration-300 hover:scale-102 delete-button bg-secondary text-almostwhite px-3 py-1 rounded hover:bg-hoveringS cursor-pointer">Delete</button>` : ''}
+      ${session ? `<button class="transition-transform duration-300 hover:scale-102 edit-button bg-first hover:bg-hovering px-3 py-1 rounded text-barbie cursor-pointer">Edit</button>
+      <button class="transition-transform duration-300 hover:scale-102 delete-button bg-secondary text-barbie px-3 py-1 rounded hover:bg-pink cursor-pointer">Delete</button>` : ''}
     </div>
   </article>
 `).join('\n');
