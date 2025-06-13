@@ -19,7 +19,7 @@ form.addEventListener('submit', async (event) => {
     loginMessage.classList.add('text-red-500');
   } else {
     loginMessage.classList.remove('text-red-500');
-    loginMessage.textContent = 'Redirecting...'
+    loginMessage.textContent = 'Logging in...'
     setTimeout(() => {
       window.location.href = '../index.html';
     }, 1000);
