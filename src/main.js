@@ -51,7 +51,7 @@ async function main() {
   
 
 const articlesList = articles.map((article) => `
-  <article class="article py-6 border-b-10 border-pageBG bg-secondary/50 rounded p-6 grid grid-cols-[auto_1fr] grid-rows-[auto_auto] gap-x-3 gap-y-2" data-id="${article.id}">
+  <article class="article py-6 border-b-10 border-pagebackgrnd bg-secondary/50 rounded p-6 grid grid-cols-[auto_1fr] grid-rows-[auto_auto] gap-x-3 gap-y-2" data-id="${article.id}">
     
     <div class="col-start-2 row-start-1">
       <h2 class="text-xl font-semibold">${article.title}</h2>
