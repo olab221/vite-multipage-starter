@@ -14,10 +14,10 @@
         Article website
       </h1>
       <nav class="flex space-x-2">
-        <a href="login/" id="login-redirect" class="transition-transform duration-250 hover:scale-100 hidden bg-primary hover:bg-hovering text-almostwhite py-2 px-4 rounded cursor-pointer text-center w-full md:w-auto ml-2.5">
+        <a href="login/" id="login-redirect" class="transition-transform duration-250 hover:scale-100 hidden bg-first hover:bg-hovering text-almostwhite py-2 px-4 rounded cursor-pointer text-center w-full md:w-auto ml-2.5">
           Log In
         </a>
-        <button id="logout-button" class="transition-transform duration-250 hover:scale-100 hidden bg-primary hover:bg-hovering text-almostwhite py-2 px-4 rounded cursor-pointer text-center w-full md:w-auto ml-2.5">
+        <button id="logout-button" class="transition-transform duration-250 hover:scale-100 hidden bg-first hover:bg-hovering text-almostwhite py-2 px-4 rounded cursor-pointer text-center w-full md:w-auto ml-2.5">
           Log Out
         </button>
       </nav>
@@ -27,7 +27,7 @@
       <section class="articles flex flex-col mb-5"></section>
 
       <div class="m-4">
-        <button id="add-article-button" class="transition-transform duration-250 hover:scale-100 w-full bg-primary hover:bg-hovering text-almostwhite font-semibold px-4 py-2 rounded cursor-pointer text-sm md:text-base">
+        <button id="add-article-button" class="transition-transform duration-250 hover:scale-100 w-full bg-first hover:bg-hovering text-almostwhite font-semibold px-4 py-2 rounded cursor-pointer text-sm md:text-base">
           Add your article
         </button>
       </div>
@@ -41,29 +41,29 @@
 
             <div>
               <label for="edit-title" class="block mb-1 font-medium">Title:</label>
-              <input type="text" id="edit-title" name="edit-title" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input type="text" id="edit-title" name="edit-title" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-first" />
             </div>
 
             <div>
               <label for="edit-subtitle" class="block mb-1 font-medium">Subtitle:</label>
-              <input type="text" id="edit-subtitle" name="edit-subtitle" class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input type="text" id="edit-subtitle" name="edit-subtitle" class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-first" />
             </div>
 
             <div>
               <label for="edit-content" class="block mb-1 font-medium">Content:</label>
-              <textarea id="edit-content" name="edit-content" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+              <textarea id="edit-content" name="edit-content" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-first"></textarea>
             </div>
 
             <div>
               <label for="edit-author" class="block mb-1 font-medium">Author:</label>
-              <input type="text" id="edit-author" name="edit-author" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input type="text" id="edit-author" name="edit-author" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-first" />
             </div>
 
             <div class="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2">
               <button type="button" id="cancel-edit" class="transition-transform duration-250 hover:scale-100 px-6 py-2 bg-secondary hover:bg-hoveringS rounded cursor-pointer text-almostwhite">
                 Cancel
               </button>
-              <button type="submit" class="transition-transform duration-300 hover:scale-102 px-6 py-2 bg-primary hover:bg-hovering rounded cursor-pointer text-almostwhite">
+              <button type="submit" class="transition-transform duration-300 hover:scale-102 px-6 py-2 bg-first hover:bg-hovering rounded cursor-pointer text-almostwhite">
                 Save
               </button>
             </div>
@@ -77,29 +77,29 @@
 
             <div>
               <label for="add-title" class="block mb-1 font-medium">Title:</label>
-              <input type="text" id="add-title" name="add-title" placeholder="Your article title" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input type="text" id="add-title" name="add-title" placeholder="Your article title" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-first" />
             </div>
 
             <div>
               <label for="add-subtitle" class="block mb-1 font-medium">Subtitle:</label>
-              <input type="text" id="add-subtitle" name="add-subtitle" placeholder="Article subtitle" class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input type="text" id="add-subtitle" name="add-subtitle" placeholder="Article subtitle" class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-first" />
             </div>
 
             <div>
               <label for="add-content" class="block mb-1 font-medium">Content:</label>
-              <textarea id="add-content" name="add-content" placeholder="Your article content" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+              <textarea id="add-content" name="add-content" placeholder="Your article content" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-first"></textarea>
             </div>
 
             <div>
               <label for="add-author" class="block mb-1 font-medium">Author:</label>
-              <input type="text" id="add-author" name="add-author" placeholder="Your article author" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-primary" />
+              <input type="text" id="add-author" name="add-author" placeholder="Your article author" required class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-first" />
             </div>
 
             <div class="flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-2">
               <button type="button" id="cancel-add" class="transition-transform duration-250 hover:scale-100 px-4 py-2 bg-secondary hover:bg-hoveringS rounded cursor-pointer text-almostwhite">
                 Cancel
               </button>
-              <button type="submit" class="transition-transform duration-250 hover:scale-100 px-4 py-2 bg-primary hover:bg-hovering rounded cursor-pointer text-almostwhite">
+              <button type="submit" class="transition-transform duration-250 hover:scale-100 px-4 py-2 bg-first hover:bg-hovering rounded cursor-pointer text-almostwhite">
                 Add
               </button>
             </div>
