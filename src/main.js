@@ -48,11 +48,11 @@ async function main() {
 
   const articlesContainer = document.querySelector('.articles');
 
-  const leafIcon = `<img src="https://marketplace.canva.com/ARZ8E/MAFmAUARZ8E/1/tl/canva-natural-leaf-icon.-100%25-naturals-vector-image-MAFmAUARZ8E.png" class="mr-3 w-6 h-6 flex-shrink-0" aria-hidden="true">`;
+  
 
 const articlesList = articles.map((article) => `
   <article class="article py-6 border-b-10 border-pageBG bg-secondary/50 rounded p-6 grid grid-cols-[auto_1fr] grid-rows-[auto_auto] gap-x-3 gap-y-2" data-id="${article.id}">
-    ${leafIcon}
+    
     <div class="col-start-2 row-start-1">
       <h2 class="text-xl font-semibold">${article.title}</h2>
       <h3 class="mt-2">${article.subtitle || ''}</h3>
