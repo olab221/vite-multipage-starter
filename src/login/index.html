@@ -3,13 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20231220/ourmid/pngtree-top-view-pasta-in-tomato-sauce-white-plate-background-png-image_11373865.png" type="image/png">
+    <title>Website - Log in</title>
     <link rel="stylesheet" href="/style.css">
   </head>
-  <body>
-    <div id="app">
-      <a href="/">Home</a>
+
+  <body class="min-h-screen flex items-center justify-center bg-secondary/50">
+    <div class="p-10 rounded w-full max-w-md text-center bg-almostwhite">
+
+      <h1 class="text-2xl mb-8 uppercase tracking-widest">Log in to your account</h1>
+
+      <form id="login-form" class="flex flex-col gap-2">
+        <label for="email" class="text-sm font-medium mb-0.2 text-left">
+          E-mail:
+        </label>
+        <input type="email" id="email" name="email" placeholder="test@example.com" required class="px-4 py-2 mb-6 border rounded focus:outline-none focus:ring-2 focus:ring-primary"/>
+        <label for="password" class="text-sm font-medium mb-0.2 text-left">
+          Password:
+        </label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required class="px-4 py-2 mb-6 border rounded focus:outline-none focus:ring-2 focus:ring-primary"/>
+
+        <button type="submit" class="transition-transform duration-300 hover:scale-102 py-2 px-4 rounded border bg-primary text-almostwhite hover:bg-hovering transition-colors cursor-pointer">
+          Log in
+        </button>
+      </form>
+
+      <div id="login-message" class="mt-4 text-sm"></div>
+
+      <div id="app" class="mt-6">
+        <nav>
+          <a href="../" class="text-secondary underline hover:text-hoveringS transition-colors cursor-pointer">
+            Back to: Homepage
+          </a>
+        </nav>
+      </div>
     </div>
-    <script type="module" src="/login/main.js"></script>
+    <script type="module" src="../login/main.js"></script>
   </body>
 </html>

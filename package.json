@@ -1,5 +1,5 @@
 {
-  "name": "supabase-sdk",
+  "name": "vite-multipage-starter",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,5 +11,7 @@
   "devDependencies": {
     "vite": "^6.3.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.0"
+  }
 }
