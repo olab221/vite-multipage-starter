@@ -1,4 +1,4 @@
-import { supabase } from './api-client.js';
+import { supabase } from './api.js';
 
 const logoutButton = document.getElementById('logout-button');
 const loginRedirect = document.getElementById('login-redirect');

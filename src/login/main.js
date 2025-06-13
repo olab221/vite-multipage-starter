@@ -1,4 +1,4 @@
-import { supabase } from '../api-client.js';
+import { supabase } from '../api.js';
 
 const form = document.getElementById('login-form');
 const loginMessage = document.getElementById('login-message');
