@@ -64,7 +64,7 @@ const articlesList = articles.map((article) => `
     </div>
     <div class="col-start-2 row-start-2 flex space-x-2">
       ${session ? `<button class="transition-transform duration-300 hover:scale-102 edit-button bg-first hover:bg-hovering px-3 py-1 rounded text-barbie cursor-pointer">Edit</button>
-      <button class="transition-transform duration-300 hover:scale-102 delete-button bg-secondary text-barbie px-3 py-1 rounded hover:bg-hoveringS cursor-pointer">Delete</button>` : ''}
+      <button class="transition-transform duration-300 hover:scale-102 delete-button bg-secondary text-barbie px-3 py-1 rounded hover:bg-pink cursor-pointer">Delete</button>` : ''}
     </div>
   </article>
 `).join('\n');
